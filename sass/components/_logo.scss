@@ -1,0 +1,19 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include fonts(26px, 700, 1.19, 0.03em);
+  text-decoration: none;
+  color: $black;
+}
+
+.logo-web {
+  color: $accent-cl;
+}
+
+.logo-footer {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: $white;
+}
