@@ -1,7 +1,28 @@
 .section-todo {
   padding-top: 0px;
   padding-bottom: 94px;
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
 }
+
+.list-todo {
+  width: auto;
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .image-todo:not(:first-child) {
   margin-left: 30px;
 }
