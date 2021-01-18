@@ -21,6 +21,7 @@
 }
 
 .menu-button {
+  margin-left: auto;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -29,6 +30,18 @@
 
   .icon-cross {
     display: none;
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+
+  &:hover .icon-menu {
+    fill: $accent-cl;
+  }
+
+  &:hover .icon-cross {
+    fill: $accent-cl;
   }
 }
 
@@ -41,10 +54,11 @@
     display: none;
   }
 }
+
 .subscribe-button {
   @include centered(inline-flex);
   position: relative;
-  margin-left: 12px;
+  // margin-left: 12px;
   @include size(200px, 50px);
   padding: 13px 29px;
   color: $white;

@@ -17,7 +17,6 @@
                 <a href="./index.html" class="logo">
                     <span class="logo logo-web">Web</span>Studio
                 </a>
-
                 <button 
                     type="button" 
                     class="menu-button"
@@ -75,7 +74,7 @@
     <main>
         <section class="section hero-section">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения<br/>для вашего бизнеса</h1>
                 <button class="button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -133,17 +132,22 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
         <section class="section team-section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list-team list">
                     <li class="team-item">
-                        <img class="image-team" src="" 
-                        height="260"
-                        width=auto
-                        alt="Дизайнер Игорь Демьяненко" />
+                        <picture>
+                            <source srcset="./img/team/desktop/Igor_desk.jpg 1x, ./img/team/desktop/Igor_desk@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/team/tablet/Igor_tab.jpg 1x, ./img/team/tablet/Igor_tab@2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/team/mobile/Igor_mob.jpg 1x, ./img/team/mobile/Igor_mob@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="image-team" src="./img/team/mobile/Igor_mob@1x.jpg 1x" alt="Дизайнер Игорь Демьяненко"/>
+                        </picture>
                         <h3 class="name-team">Игорь Демьяненко</h3>
                         <p class="position">Product Designer</p>
                         <ul class="social-links list">
@@ -178,10 +182,15 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img class="image-team" src="" 
-                        height="260"
-                        width="270"
-                        alt="Разработчик Ольга Репина" />
+                        <picture>
+                            <source srcset="./img/team/desktop/Olga_desk.jpg 1x, ./img/team/desktop/Olga_desk@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/team/tablet/Olga_tab.jpg 1x, ./img/team/tablet/Olga_tab@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/team/mobile/Olga_mob.jpg 1x, ./img/team/mobile/Olga_mob@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="image-team" src="./img/team/mobile/Olga_mob.jpg 1x" alt="Разработчик Ольга Репина" />
+                        </picture>
                         <h3 class="name-team">Ольга Репина</h3>
                         <p class="position">Frontend Developer</p>
                         <ul class="social-links list">
@@ -216,10 +225,15 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img class="image-team" src="" 
-                        height="260"
-                        width="270"
-                        alt="Маркетолог Николай Тарасов" />
+                        <picture>
+                            <source srcset="./img/team/desktop/Nikolay_desk.jpg 1x, ./img/team/desktop/Nikolay_desk@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/team/tablet/Nikolay_tab.jpg 1x, ./img/team/tablet/Nikolay_tab@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/team/mobile/Nikolay_mob.jpg 1x, ./img/team/mobile/Nikolay_mob@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="image-team" src="./img/team/mobile/Nikolay_mob.jpg 1x" alt="Маркетолог Николай Тарасов" />
+                        </picture>
                         <h3 class="name-team">Николай Тарасов</h3>
                         <p class="position">Marketing</p>
                         <ul class="social-links list">
@@ -254,10 +268,15 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img class="image-team" src="" 
-                        height="260"
-                        width="270"
-                        alt="Дизайнер Михаил Ермаков" />
+                        <picture>
+                            <source srcset="./img/team/desktop/Michael_desk.jpg 1x, ./img/team/desktop/Michael_desk@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/team/tablet/Michael_tab.jpg 1x, ./img/team/tablet/Michael_tab@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/team/mobile/Michael_mob.jpg 1x, ./img/team/mobile/Michael_mob@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="image-team" src="./img/team/mobile/Michael_mob.jpg 1x" alt="Дизайнер Михаил Ермаков" />
+                        </picture>
                         <h3 class="name-team">Михаил Ермаков</h3>
                         <p class="position">UI Designer</p>
                         <ul class="social-links list">
@@ -347,68 +366,66 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div>
-                <div class="logo-footer">
-                    <p><a href="" class="logo-white logo">
-                        <span class="logo logo-web">Web</span>Studio</a>
-                    </p>
-                </div>
-                <div>
-                    <ul class="list">
-                        <li class="footer-contacts-link">
-                            <a href="https://goo.gl/maps/QSxvcTna7RhHoLni9" target="blank" rel="noopener noreferer" class="link adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="footer-contacts-link">
-                            <a href="mailto:info@example.com" class="link footer-contacts">info@example.com</a></li>
-                        <li class="footer-contacts-link">
-                            <a href="tel:+380991111111" class="link footer-contacts">+38 096 111 11 11</a></li>
-                    </ul>
-                </div>
+        <div class="container">
+        <div class="footer-contact-part">
+            <div class="footer-widget">
+                <p class="logo-footer"><a href="" class="logo-white logo">
+                    <span class="logo logo-web">Web</span>Studio</a>
+                </p>
+                <ul class="list footer-list">
+                    <li class="footer-contacts-link">
+                        <a href="https://goo.gl/maps/QSxvcTna7RhHoLni9" target="blank" rel="noopener noreferer" class="link adress">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="footer-contacts-link">
+                        <a href="mailto:info@example.com" class="link footer-contacts">info@example.com</a></li>
+                    <li class="footer-contacts-link">
+                        <a href="tel:+380991111111" class="link footer-contacts">+38 096 111 11 11</a></li>
+                </ul>
             </div>
             <div class="footer-links">
                 <h2 class="join">Присоединяйтесь</h2>
                 <ul class="social-links list">
-                    <li class="social-item-footer">
-                        <a class="social-link-footer" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icon-footer">
-                                <use href="./img/symbol-defs (2).svg#icon-instagram-2" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link-footer" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icon-footer">
-                                <use href="./img/symbol-defs (2).svg#icon-twitter-1" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link-footer" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icon-footer">
-                                <use href="./img/symbol-defs (2).svg#icon-facebook-1" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link-footer" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icon-footer">
-                                <use href="./img/symbol-defs (2).svg#icon-linkedin-1" />
-                            </svg>
-                        </a>
-                    </li>
+                        <li class="social-item-footer">
+                            <a class="social-link-footer" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icon-footer">
+                                    <use href="./img/symbol-defs (2).svg#icon-instagram-2" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-footer" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icon-footer">
+                                    <use href="./img/symbol-defs (2).svg#icon-twitter-1" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-footer" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icon-footer">
+                                    <use href="./img/symbol-defs (2).svg#icon-facebook-1" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-footer" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icon-footer">
+                                    <use href="./img/symbol-defs (2).svg#icon-linkedin-1" />
+                                </svg>
+                            </a>
+                        </li>
                 </ul>
             </div>
-            <div class="subscribe">
-                <h2 class="join">Подпишитесь на рассылку</h2>
-                <form class="subscribe-form" action="./telegram.php" method="POST" >
-                        <input class="subscribe-input" type="e-mail" name="user_mail" placeholder="E-mail" />
-                        <button type="submit" class="subscribe-button">Подписаться
-                            <svg class="icon-send">
-                                <use href="./img/symbol-defs (2).svg#icon-send" />
-                            </svg>
-                        </button>
-                </form>
-            </div>
+        </div>
+        <div class="subscribe">
+            <h2 class="join">Подпишитесь на рассылку</h2>
+            <form class="subscribe-form" action="./telegram.php" method="POST" >
+                <input class="subscribe-input" type="e-mail" name="user_mail" placeholder="E-mail" />
+                <button type="submit" class="subscribe-button">Подписаться
+                    <svg class="icon-send">
+                    <use href="./img/symbol-defs (2).svg#icon-send" />
+                    </svg>
+                </button>
+            </form>
+        </div>
         </div>
     </footer>
 

@@ -13,11 +13,13 @@
   }
 }
 
-.item-direction {
-  &:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .item-direction:not(:last-child) {
     margin-bottom: 30px;
   }
+}
 
+.item-direction {
   @include for-size(tablet) {
     width: calc((100% - 60px) / 2);
     margin-bottom: 30px;

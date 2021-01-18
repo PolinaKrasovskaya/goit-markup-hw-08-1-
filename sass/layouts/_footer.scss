@@ -1,11 +1,62 @@
 .footer {
-  background-color: $dark-bg;
+  padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
+  align-items: center;
+  background-color: $dark-bg;
 }
 
-.footer-container {
-  // display: flex;
-  // justify-content: space-between;
+.footer-contact-part {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  // .footer {
+  //   display: flex;
+  //   justify-content: space-evenly;
+  //   align-items: baseline;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    .footer {
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+
+    .footer-widget {
+      margin-right: 70px;
+    }
+  }
+  // .footer-contact-part {
+  //   display: flex;
+  //   justify-content: space-evenly;
+  //   align-items: baseline;
+  // }
+}
+// @include for-size(desktop) {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// @include for-size(desktop) {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.footer-widget {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .social-link-footer {
@@ -32,19 +83,28 @@
 }
 
 .footer-links {
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .join {
-  margin-top: 72px;
+  // margin-top: 72px;
   margin-bottom: 20px;
   @include fonts(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   color: $white;
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
 }
 
 .footer-contacts-link:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-contacts {

@@ -1,6 +1,10 @@
 .social-links {
   display: inline-flex;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+
+  @include for-size(desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .social-icon {

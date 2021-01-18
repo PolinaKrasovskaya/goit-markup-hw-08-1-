@@ -1,5 +1,6 @@
 .navigation {
   position: relative;
+  display: flex;
   margin-top: auto;
   margin-bottom: auto;
   border-bottom: 1px solid #ececec;
@@ -11,36 +12,84 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
+
+  @include for-size(tablet) {
+    height: 80px;
+  }
 }
 
 .menu-container {
-  display: none;
-
-  position: absolute;
+  // display: none;
+  text-align: center;
+  // position: absolute;
   background-color: #fff;
   top: 100%;
   left: 0;
   width: 100%;
 
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  z-index: 100;
+  @media screen and(max-width: 767px) {
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    background-color: $white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    padding: 60px;
+  }
+
   &.is-open {
     display: block;
+    text-align: center;
+
+    @include for-size(tablet) {
+      display: flex;
+    }
   }
 }
 
 .site-nav {
   // display: flex;
   // margin-left: 93px;
+  margin-bottom: 0;
 
-  .item + .item {
-    margin-left: 50px;
+  @include for-size(tablet) {
+    display: flex;
+    margin-left: 88px;
   }
+
+  .item {
+    @media screen and(max-width: 767px) {
+      padding-bottom: 40px;
+    }
+    &:last-child {
+      @media screen and(max-width: 767px) {
+        padding-bottom: 60px;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 50px;
+
+      @media screen and(max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+  }
+  // .item + .item {
+  //   margin-left: 50px;
+  // }
 
   .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
   }
 }
+// }
 
 .menu-link {
   @include fonts(14px, 500, 1.14, 0.02em);
@@ -50,17 +99,19 @@
 /*Auth-nav*/
 .auth-nav {
   // display: flex;
-  margin-left: auto;
+  align-items: center;
+  margin: auto 0;
+  // margin-left: auto;
 
   .item + .item {
     margin-left: 50px;
   }
 
-  .link {
-    // display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
+  // .link {
+  //   // display: flex;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  // }
 }
 
 .item {
